@@ -1,3 +1,4 @@
+import profileCss from './Profile-css';
 export default function Profile(props) {
   const { username, tag, location, avatar, stats } = props;
   return (
