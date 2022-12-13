@@ -23,8 +23,8 @@ export default function Statistics(props) {
               }}
               key={stat.id}
             >
-              <span class="label">{stat.label}</span>
-              <span class="percentage">{stat.percentage}%</span>
+              <span className={css.label}>{stat.label}</span>
+              <span className={css.percentage}>{stat.percentage}%</span>
             </li>
           ))}
         </ul>

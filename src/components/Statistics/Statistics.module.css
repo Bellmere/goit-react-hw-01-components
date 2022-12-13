@@ -1,20 +1,44 @@
 .statisticsContainer {
-    
+    margin: 40px 0 auto;
 }
 
 .statistics {
-
+    border: none;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
 }
 
 .title {
-
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.2;
 }
 
 .statList {
-
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .statListItem,
 .statListItemNoTitle {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
 
+.label {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.percentage {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
 }
