@@ -17,3 +17,18 @@
 .location {
     margin: 0 auto 15px;
 }
+.stats {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.stats__item {
+    display: flex;
+    flex-direction: column;
+}
+.label {
+
+}
+.quantity {
+    
+}
