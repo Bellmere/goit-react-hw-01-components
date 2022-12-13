@@ -1,0 +1,19 @@
+.profile {
+    background-color: aqua;
+}
+.description {
+    text-align: center;
+}
+.avatar {
+    display: block;
+}
+.name {
+    margin: 0 auto 15px;
+    font-weight: bold;
+}
+.tag {
+    margin: 0 auto 15px;
+}
+.location {
+    margin: 0 auto 15px;
+}
