@@ -1,11 +1,16 @@
 .profile {
     background-color: aqua;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: #000 1px solid;
 }
 .description {
     text-align: center;
 }
 .avatar {
     display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .name {
     margin: 0 auto 15px;
@@ -13,6 +18,8 @@
 }
 .tag {
     margin: 0 auto 15px;
+    font-size: 24px;
+    line-height: 1.2;
 }
 .location {
     margin: 0 auto 15px;
@@ -21,14 +28,21 @@
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    gap: 10px;
 }
 .stats__item {
     display: flex;
     flex-direction: column;
 }
 .label {
-
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
 }
 .quantity {
-    
+    font-size: 18px;
+    line-height: 1.4;
 }
