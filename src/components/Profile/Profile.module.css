@@ -26,11 +26,13 @@
     margin: 0 auto 10px;
     font-size: 20px;
     line-height: 1.2;
+    color: #8a8b8e;
 }
 .location {
     margin: 0 auto 40px;
     font-size: 20px;
     line-height: 1.2;
+    color: #8a8b8e;
 }
 .stats {
     list-style: none;
@@ -40,10 +42,23 @@
     padding: 0;
     text-align: center;
 }
+
+.stats__item:first-child {
+    border-right: 1px solid #d3d5e3;
+}
+
+.stats__item:last-child {
+    border-left: 1px solid #d3d5e3;
+}
+
 .stats__item {
     display: flex;
     flex-direction: column;
+    background-color: hsla(0,0%,95%,.833);
+    border-top: 1px solid #d3d5e3;
+    padding: 10px;
 }
+
 .label {
     font-weight: 500;
     font-size: 18px;
