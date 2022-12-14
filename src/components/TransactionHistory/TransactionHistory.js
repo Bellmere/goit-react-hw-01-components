@@ -27,13 +27,13 @@ export default function TransactionHistory(props) {
     );
 };
 
-TransactionHistory.propTypes = {
-    items: arrayOf(
-        propTypes.shape({
-            key: propTypes.number.isRequired,
-            type: propTypes.string.isRequired,
-            amount: propTypes.number.isRequired,
-            currency: propTypes.string.isRequired,
-        })
+TransactionHistory.protoType = {
+    items: propTypes.arrayOf(
+      propTypes.shape({
+        id: propTypes.number,
+        type: propTypes.string.isRequired,
+        amount: propTypes.number.isRequired,
+        currency: propTypes.string.isRequired,
+      })
     ).isRequired,
-}
+  };
