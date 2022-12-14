@@ -1,5 +1,5 @@
 import css from '../Statistics/Statistics.module.css';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 function getRandomHexColor() {
   let bgColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
@@ -32,3 +32,14 @@ export default function Statistics(props) {
     </div>
   );
 }
+
+Statistics.propTypes = {
+  title: propTypes.string,
+  stats: propTypes.arrayOf(
+    propTypes.shape({
+      id: propTypes.string.isRequired,
+      label: propTypes.string.isRequired,
+      percentage: propTypes.number.isRequired,
+    })
+  ).isRequired,
+};
